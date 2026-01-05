@@ -1,0 +1,4 @@
+#why does the input() function always returns string?
+    #Because it is designed to read user input as text. 
+    # This is a design decision to prioritize simplicity, consistency, and security in handling user input. 
+#We can convert the string input to other data types by using data type casting e.g. functions like int(), float(), etc.
