@@ -1,0 +1,40 @@
+#what is differece between 
+  print()
+  return
+#Explain with examples
+
+print()
+
+Purpose: To show information (text, variables) on the screen for a human user, often for debugging or displaying results.
+Action: Outputs to the console/terminal.
+Function Impact: Doesn't affect the function's value; if a function only prints and doesn't return anything else, it implicitly returns None.
+def Display(name):
+  print(f"Hello, {name}!") # Prints to console
+
+# Calling Display()
+Display("Ashwini") # Output: Hello, Ashwini!
+
+# What happens if you try to use its "result"?
+result = Display("Ladkat") 
+print(result)  
+# Output: Hello, Ladkat!
+
+
+
+return
+Purpose: To send a value from a function so it can be used else where in the program
+Action: Exits the function and passes data back to the calling statement.
+Function Impact: Provides the function's output/result. 
+
+def add_numbers(a, b):
+  return a + b # Returns the sum
+
+# Calling add_numbers() and storing the returned value
+sum_result = add_numbers(5, 3) # sum_result now holds 8
+
+# Now we can use the returned value (e.g., print it)
+print(sum_result) # Output: 8
+
+# Or use it in another calculation
+another_result = add_numbers(sum_result, 10)
+print(another_result) # Output: 18     

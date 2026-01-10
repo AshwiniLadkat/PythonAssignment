@@ -1,0 +1,7 @@
+What is difference between
+
+  x=10 # x is integer tyep
+  x = "Ten" # x is string type
+  Is this allowed?why?
+  
+Yes, this is allowed in Python because it is a dynamically typed language.

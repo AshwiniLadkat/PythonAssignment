@@ -1,0 +1,13 @@
+Explain how python manages memory automatically.
+why does the programming not need to explicitly allocate and free memory ?
+
+Python manages memory automatically through a built-in memory manager that handles 
+the allocation and deallocation of memory for objects.
+This is primarily achieved through a combination of reference counting and a garbage collector.  
+
+
+Because of this automatic memory management, programmers do not need to explicitly allocate and free memory. 
+This reduces the likelihood of memory leaks and other memory-related issues,
+
+
+
