@@ -1,0 +1,8 @@
+#Predict the output
+x= None
+print(type(x))  Output will be <class 'NoneType'>
+print(x==False)  Output will be False
+Explain the result 
+  Here x is assigned to None, which represents the absence of a value.\
+  None type is not same as 0,False and Empty string 
+  Hence the output of x==False evaluates to False

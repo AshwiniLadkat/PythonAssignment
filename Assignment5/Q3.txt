@@ -1,0 +1,18 @@
+what is diffrence between byte and bytearray in python?
+mention the mutability and usecases 
+    Bytes and bytearray are both used to represent binary data in Python, but they 
+    have some key differences:
+    1. Mutability:
+        Bytes are immutable, meaning once a bytes object is created, its content cannot be changed.
+        if you try to modify a bytes object will raise a TypeError.   
+        Bytearray, on the other hand, is mutable. You can modify the content of a
+         bytearray object after its creation.
+    2. Use Cases:
+        Byte :  we can use bytes when we used Network protocols (sending):
+                When data needs to be sent to another function or over a network connection without the 
+               risk of accidental modification.
+               while we can use bytes for Reading binary files where the data should remain unchanged.
+        bytearray: we can use bytearray to Assembling data from fragments: 
+                 Efficiently building up a large message from smaller chunks 
+                 received over a socket connection, avoiding expensive concatenation 
+                 operations that create new objects each time.

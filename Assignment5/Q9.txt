@@ -1,0 +1,10 @@
+predict the output
+s={10,20,30,10,20}
+print(s)
+ Output will be        
+    {10, 20, 30}
+Explanation :
+    Sets in Python are unordered collections of unique elements. 
+    When we create a set with duplicate values, Python automatically removes the duplicates, 
+    resulting in a set that contains only unique elements. In this case, 
+     the duplicates 10 and 20 are removed,

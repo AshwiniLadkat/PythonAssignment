@@ -1,0 +1,8 @@
+#predict the output
+ba = bytes([65, 66, 67])
+print(ba)  # Output: b'ABC'
+#Explain how numbers are converted internally   
+Integer to Byte: The integer 65 is stored as a single byte of data in memory.
+Encoding Lookup: The interpreter looks up the character associated with the value 65 in the ASCII table.
+Mapping: The integer 65 maps to the character 'A', 66 maps to 'B', and 67 maps to 'C'.
+and hence final result is b'ABC'

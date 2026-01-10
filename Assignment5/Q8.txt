@@ -1,0 +1,15 @@
+What is Set in Python?
+In Python, a set is a built-in data structure used to store a collection of unique items.
+Set items are unordered, unchangeable, and do not allow duplicate values
+Once a set is created, you cannot change its items, but you can remove items and add new items.
+example
+
+thisset = {"apple", "banana", "cherry", False, True, 0}
+
+print(thisset)  output could be {'banana', 'cherry', 'apple', False,0, True, 0}
+
+thisset.update(["orange", "mango", "grapes",False,True,0])
+print(thisset)  output could be {'banana', 'cherry', 'apple', 'orange', 'mango', 'grapes', False, True, 0}
+Explanation:
+    When we create a set with duplicate values like False, True, and 0,
+    the set automatically removes the duplicates and retains only unique values.
