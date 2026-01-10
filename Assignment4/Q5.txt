@@ -1,0 +1,15 @@
+#Predict the output
+s = "Python" 
+print(id(s)) 
+s= s + "3" 
+print(id(s)) 
+Exaplin the reason for change/no change in id 
+  
+# Explanation:
+    #Line2 : This will create a string object in memory
+    #Line3 : # print mememory address of string object S
+    #Line4 : # This will create a new strig object in memory after concatenation 
+    #Line5 : # This is print memory address of new string object after concatenation
+    
+    #Explanation: Since string is immutable in Python, when we modify the string by concatenating "3" to it,
+    #a new string object is created in memory. Therefore, the id of the string changes after the modification.

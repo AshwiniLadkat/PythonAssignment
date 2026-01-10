@@ -1,0 +1,33 @@
+Why are the tuples Faster than the lists? In which real world scenario would you prefer the tuples
+over the lists? Explain with example code.
+Tuples are generally faster than lists in Python due to their immutability.
+Since tuples cannot be modified after their creation, Python can optimize their storage and access patterns more efficiently than lists,
+which are mutable and can change in size and content. This immutability allows tuples to have a smaller memory footprint and faster access times.  
+
+Real-world scenario where tuples are preferred over lists:
+    
+When you have a collection of sequence of items that should not change throughout the program,
+such as A sequence consisting of a first name, last name, age, and address, tuples are a better choice.
+Using a tuple to represent this information ensures that the data remains constant 
+
+Example code:
+    
+#Defining a tuple to represent a person's information
+person_info = ("Ashwini", "Ladkat", 30, "Hadpsar")
+print("Person Information:", person_info)
+Accessing elements of the tuple
+print("First Name:", person_info[0])    
+print("Last Name:", person_info[1])
+print("Age:", person_info[2])
+print("Address:", person_info[3])   
+
+#Tuples is important for data integrity. If a list were used instead, there would be a risk of accidental modification of the person's information.  
+if you tried to change an element of the tuple, it would raise an error:
+ person_info[2] = 31   #This will raise a TypeError because tuples are immutable.
+
+
+
+
+
+
+

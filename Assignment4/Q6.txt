@@ -1,0 +1,15 @@
+#What is Dictionary in Python? Explain 
+#1.Key-Value Pair
+#2.Why Keys must be immutable?
+#3. Why duplicate keys are  not allowed?
+# A dictionary in Python is a built-in data type that stores collections of key-value pairs.
+# Each key is unique and is used to access its corresponding value.
+#1.Key-Value Pair:
+    #In a dictionary, each key is associated with a value. Key should be unique within a dictionary,
+    #while values can be of any data type and can be duplicated.
+#2.Why Keys must be immutable?    
+    #Keys are used to quickly locate the corresponding value in memory. If we change the key then        
+    #its hash value could change, leading to inconsistencies and making it impossible to retrieve the value.
+#3. Why duplicate keys are  not allowed?
+    #If duplicate keys were allowed, it would create ambiguity when trying to access a value using a key.
+

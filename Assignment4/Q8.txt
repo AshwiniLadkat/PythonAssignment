@@ -1,0 +1,15 @@
+ What is Range datatype in Python? How it is different from list of numbers?
+ Range datatype in Python represents an immutable sequence of numbers and is commonly used for looping 
+
+ Difference between Range and List of numbers:
+ 1. Memory Efficiency:  Range  do not store all the numbers in memory at once.
+                         Lists, on the other hand, store all the elements in memory. hence range is more memory efficient 
+                          for large sequences.
+ 2. Immutability: Range objects are immutable, meaning their values cannot be changed after creation.
+                  Lists are mutable, allowing modification of their elements.
+ 3. Performance:  Range objects can be faster for iteration in loops since they do not require 
+                  the overhead of to storage numbers in memory.
+ 4. Functionality:  Lists provide more functionality and methods for manipulation 
+                   (like append, remove, etc.) compared to range objects,
+                    Range objects which are primarily used for iteration.
+

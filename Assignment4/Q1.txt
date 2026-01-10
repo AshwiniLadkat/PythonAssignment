@@ -1,0 +1,19 @@
+What is difference between List and Tuple in Python? Explain in terms of 
+    Mutability , Memory , Perfomance and Use cases 
+ List vs Tuple in Python   
+ 1. Mutability:
+     Lists are mutable, meaning their elements can be changed, added, 
+     or removed after the list is created.
+     Tuples are immutable, meaning once they are created, their elements 
+     cannot be changed, added, or removed.
+ 2. Memory:
+     Tuples generally use less memory than lists because they are immutable
+
+ 3. Performance:
+     Tuples can be slightly faster than lists for certain operations due to their immutability
+    e.g iterating through a tuple is faster than iterating through a list.
+ 4. Use Cases:
+     Lists are used when you need a collection of items that may change
+     Tuples are used when you need a collection of items that should not change    
+    
+ 
