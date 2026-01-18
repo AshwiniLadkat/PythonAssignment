@@ -1,0 +1,5 @@
+#what is user defined function in python?Why do we need functions instead of writting code repeatedly?
+     #UDF is the set of instructions that perform a specific task and can be reused multiple times in a program.
+     #it is created by the user to perform custom  operations.
+     #we need functions to avoid code redundancy, improve code organization, enhance readability, and facilitate maintenance.     
+    #Functions allow us to encapsulate logic, making it easier to test and debug code.     
