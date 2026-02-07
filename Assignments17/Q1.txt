@@ -1,0 +1,9 @@
+#write a script in .py which read contents from photo file .png  and display on console in readable format
+def ReadPhotoFile(filePath):
+    
+    try:
+        with open(filePath, 'rb') as file:
+            content = file.read()
+            print(content)
+    except FileNotFoundError:
+        print("File not found. Please check the file path.")    
