@@ -1,0 +1,17 @@
+#write a program which conatins one function named as Add() which accept two numbers 
+#from user and return addition of that two numbers
+
+def Add(num1, num2):
+    return num1 + num2
+def main():
+    inputdata = input("Input by '' seperator: ").split(' ')
+    if len(inputdata) != 2:
+        print("Please enter exactly two numbers separated by a comma.")
+        return  
+    num1 = int(inputdata[0])
+    num2 = int(inputdata[1])
+    result = Add(num1, num2)
+    print("Addition of the two numbers is:", result)    
+
+if __name__ == "__main__":
+    main()      

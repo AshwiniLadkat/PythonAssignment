@@ -1,0 +1,12 @@
+#wrte a programs which dislay  5 times Marvellous on the screen
+
+def Display():
+    for _ in range(5):
+        print("Marvellous")
+
+def main():
+    print("OutPut:")
+    Display()
+
+if __name__ == "__main__":
+    main()  

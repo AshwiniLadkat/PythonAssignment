@@ -1,0 +1,14 @@
+#write a program which conatins one function named as ChkNum() which accept one parameter
+# as number .If number is even thenit should dispay "Even Number" otherwise "Odd Number" on console
+def ChkNum(num):
+    if num % 2 == 0:
+        print("Even Number")
+    else:
+        print("Odd Number")
+
+def main():
+    num = int(input("Enter a number: "))
+    ChkNum(num)
+
+if __name__ == "__main__":
+    main()      

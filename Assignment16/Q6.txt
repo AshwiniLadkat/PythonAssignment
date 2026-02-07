@@ -1,0 +1,18 @@
+#write a program which accept number from user and check whether that number is positive or negative or zero.
+#and display that result on same line 
+def CheckNumber(num):
+    if num > 0:
+        return "Output : Positive Number"
+    elif num < 0:
+        return "Output : Negative Number"
+    else:
+        return "Output : Zero"   
+def main():
+    try:
+        num = int(input("Input: "))
+        result = CheckNumber(num)
+        print(result, end=' ')
+    except ValueError:
+        print("Invalid input. Please enter an integer.", end=' ')
+if __name__ == "__main__":
+    main()
