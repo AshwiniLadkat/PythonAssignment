@@ -1,0 +1,28 @@
+#Desingn a python application that creates two seperate threads namesd as Even and Odd.
+#Even thread should display the first 10 even numbers
+#the Odd thread should display the first 10 odd numbers.
+#Both thread should execute independently using threading module.
+#Ensure proper thread creation and execution 
+import threading
+import time
+def display_even_numbers():
+    print("Inside display_even_numbers:",threading.get_ident())
+    for i in range(20):
+        if i % 2 == 0:
+            print(f"Even Thread: {i}")
+           
+def display_odd_numbers():
+    print("Inside display_odd_numbers:",threading.get_ident())
+    for i in range(20):
+        if i % 2 != 0:
+            print(f"Odd Thread: {i}")            
+
+def main():      
+    even_thread = threading.Thread(target=display_even_numbers)
+    odd_thread = threading.Thread(target=display_odd_numbers)
+    even_thread.start()
+    odd_thread.start()
+    even_thread.join()
+    odd_thread.join()
+if __name__ == "__main__":
+    main()
