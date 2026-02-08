@@ -1,0 +1,32 @@
+#write a program which accepts N numbers from user and store it into list.
+# Return Minimum number from that list 
+from functools import reduce
+def FilterNumbers(Task,Inputlist):
+    result = list()
+    for no in Inputlist:
+        Ret = Task(no)
+        if(Ret):
+            result.append(no)
+    return result
+is_int = lambda s: s.strip().lstrip("+-").isdigit()
+Minimum = lambda A,B : A if A < B else B
+def main():
+    
+    try:        
+        inputdata = input("Input by comma separator: ").split(',')
+        filterlist = list(FilterNumbers(is_int,inputdata))
+        print("Data after  filter is : ",filterlist)
+        numbers = list(map(int, filterlist))
+        print("Data after  mapped is : ",numbers)
+        if len(numbers) == 0:
+            print("No valid integers were provided.")
+            return
+        result = reduce(Minimum,numbers)             
+        print("Minimum number from the list is:", result)
+    except ValueError:
+        print("Invalid input. Please enter integers separated by spaces.")
+    except Exception as e:
+        print("An error occurred:", str(e))
+
+if __name__ == "__main__":
+    main()

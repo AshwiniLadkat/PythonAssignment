@@ -1,0 +1,41 @@
+#write a program which accept N numbers from user and store it into list.
+#return addition of all prime numbers from that list.Main python file accept N numbers  rom user and pass 
+#each number to chkPrime() function which is part of our user defined module  names as MarvellousNum.
+#Name of the function from mai  python file should be ListPrime().
+from functools import reduce
+import Module.MarvellousNum as Marvellousmodule
+is_int = lambda s: s.strip().lstrip("+-").isdigit()
+addition = lambda a, b: a + b
+def FilterNumbers(Task,Inputlist):
+    result = list()
+    for no in Inputlist:
+        Ret = Task(no)
+        if(Ret):
+            result.append(no)
+    return result
+def ListPrime(Task,Inputlist):
+    result = list()
+    for no in Inputlist:
+        Ret = Task(no)
+        if(Ret):
+            result.append(no)
+    return result
+def main():    
+    try:        
+        inputdata = input("Input by comma separator: ").split(',') 
+        filterlist = list(FilterNumbers(is_int,inputdata))
+        if len(filterlist) == 0:
+            print("No valid integers were provided.")
+            return
+        print("Data after  filter is : ",filterlist)
+        primelist = ListPrime(Marvellousmodule.chkPrime, filterlist)        
+        print("Data after  mapped is : ",primelist)        
+        result = reduce(addition, primelist)           
+        print(f"Addition of all prime numbers in the list is:", result)
+    except ValueError:
+        print("Invalid input. Please enter integers separated by spaces.")
+    except Exception as e:
+        print("An error occurred:", str(e))
+
+if __name__ == "__main__":
+    main()
