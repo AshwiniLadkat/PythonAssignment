@@ -1,0 +1,5 @@
+#write program which contains filter(),map() and reduce() in it.
+#Python application which contains one list of numbers and accepted from user.
+ #Filter - should filter numbers which are prime 
+#  map - multiply each number by 2
+#  reduce - return maximum from that numbers

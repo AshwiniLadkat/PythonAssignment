@@ -1,0 +1,23 @@
+#write a program which contains one lambda function which accepts two parameter and return 
+#Multiplication
+multiplication = lambda x, y: x * y
+is_int = lambda s: s.strip().lstrip("+-").isdigit()
+def main():
+    try:        
+        inputdata = list(input("Input: ").split(' '))
+        filterlist = list(filter(is_int,inputdata))
+        if len(filterlist) == 0:
+            print("No valid input  were provided.")
+            return
+        elif len(filterlist) != 2:
+            print("Please provide only two integers for multiplication.")
+            return  
+        result = multiplication(int(inputdata[0]), int(inputdata[1]))
+        print(f"Output: {result}",end= ' ')
+    except ValueError:
+        print("Invalid input. Please enter integers separated by spaces.")       
+       
+    except Exception as e:
+        print("An error occurred:", str(e)) 
+if __name__ == "__main__":
+    main()
